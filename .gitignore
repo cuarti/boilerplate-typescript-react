@@ -1,0 +1,40 @@
+
+### Node
+**/*.js
+**/*.d.ts
+**/*.map
+!/*.js
+node_modules
+npm-debug.log*
+.npm
+.node_repl_history
+*.tgz
+
+### Build
+build/
+dist/
+out/
+gen/
+
+### Common
+logs
+*.log
+storage
+*.secret
+*.secret.*
+tmp
+*.tmp
+
+### IDEs
+.project
+nbproject
+.idea
+
+### OS
+*.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+*.lnk
+*~
+.Trash-*
