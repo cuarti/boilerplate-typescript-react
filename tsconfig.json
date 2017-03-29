@@ -4,8 +4,10 @@
     "target": "es5",
     "jsx": "react",
     "moduleResolution": "node",
+    "outDir": "./dist/",
     "sourceMap": true,
     "declaration": true,
+    "noImplicitAny": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true
   },

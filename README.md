@@ -1,2 +1,2 @@
-# boilerplate-webpack2-react-typescript-hmr
-Boilerplate to React and typescript bundled with 
+# boilerplate-webpack-react-ts
+ Boilerplate for react and typescript bundled with webpack and hmr.
