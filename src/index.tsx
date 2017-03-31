@@ -1,11 +1,11 @@
 
-declare let module: {hot: any};
-
-
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {AppContainer} from 'react-hot-loader';
 import App from './components/App';
+
+
+declare let module: {hot: any};
 
 
 const root = document.getElementById('root');

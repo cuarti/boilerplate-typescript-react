@@ -12,13 +12,13 @@ module.exports = {
     context: resolve(__dirname, 'src'),
 
     entry: [
-        'react-hot-loader/patch',
+        // 'react-hot-loader/patch',
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
         './index.tsx'
     ],
 
-    output:  {
+    output: {
         filename: 'bundle.js',
         path: resolve(__dirname, 'public'),
         publicPath: '/'
@@ -31,25 +31,25 @@ module.exports = {
     module: {
         rules: [
             {
-                test:    /\.js$/,
-                use:     ['babel-loader', 'source-map-loader'],
+                test: /\.js$/,
+                use: ['babel-loader', 'source-map-loader'],
                 exclude: /node_modules/
             },
             {
                 test: /\.tsx?$/,
-                use:  'awesome-typescript-loader'
+                use: 'awesome-typescript-loader'
             }
         ],
     },
 
-    plugins:     [
+    plugins: [
         new CheckerPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin()
     ],
 
-    externals:   {
-        'react':     'React',
+    externals: {
+        'react': 'React',
         'react-dom': 'ReactDOM'
     },
 
