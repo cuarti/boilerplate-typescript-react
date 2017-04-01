@@ -12,7 +12,7 @@ module.exports = {
     context: resolve(__dirname, 'src'),
 
     entry: [
-        // 'react-hot-loader/patch',
+        'react-hot-loader/patch',
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
         './index.tsx'
@@ -48,10 +48,10 @@ module.exports = {
         new webpack.NamedModulesPlugin()
     ],
 
-    externals: {
-        'react': 'React',
-        'react-dom': 'ReactDOM'
-    },
+    // externals: {
+    //     'react': 'React',
+    //     'react-dom': 'ReactDOM'
+    // },
 
     devServer: {
         hot: true,
