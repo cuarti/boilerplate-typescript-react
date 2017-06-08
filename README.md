@@ -21,7 +21,7 @@
 - Support to Images and other files
 - Support to Web Server with webpack-dev-middleware and webpack-hot-middleware
 - Change basic example to one more complex
-- Mode @types dependencies to dev-dependencies
+- Move @types dependencies to dev-dependencies
 
 ### References
 - https://github.com/vikpe/react-webpack-typescript-starter
