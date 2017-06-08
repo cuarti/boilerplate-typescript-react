@@ -1,6 +1,6 @@
 
-# boilerplate-webpack-react-ts
- Boilerplate for react and typescript bundled with webpack and hmr.
+# boilerplate-typescript-react
+ Boilerplate for react in typescript
 
 ### Supported
 - Webpack2
