@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate-webpack-react-ts",
+  "name": "boilerplate-typescript-react",
   "version": "1.0.0",
-  "description": " Boilerplate for react and typescript bundled with webpack and hmr",
+  "description": "Boilerplate for react in typescript ",
   "keywords": [
     "boilerplate",
     "hmtl",
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cuarti/boilerplate-webpack-react-ts.git"
+    "url": "git+https://github.com/cuarti/boilerplate-typescript-react.git"
   },
   "bugs": {
-    "url": "https://github.com/cuarti/boilerplate-webpack-react-ts/issues"
+    "url": "https://github.com/cuarti/boilerplate-typescript-react/issues"
   },
-  "homepage": "https://github.com/cuarti/boilerplate-webpack-react-ts#readme",
+  "homepage": "https://github.com/cuarti/boilerplate-typescript-react#readme",
   "dependencies": {
     "@types/node": "^7.0.12",
     "@types/react": "^15.0.20",
