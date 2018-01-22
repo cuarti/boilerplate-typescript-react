@@ -10,6 +10,8 @@ export const storybook = {
 
 	// devtool: 'cheap-module-eval-source-map'
 
+	resolve: basic.resolve,
+
 	module: {
 		rules: [
 			scriptRule,
@@ -21,6 +23,6 @@ export const storybook = {
 		...basic.plugins,
 		namedModulesPlugin,
 		devEnvPlugin
-	],
+	]
 
 };

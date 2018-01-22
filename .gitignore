@@ -1,9 +1,7 @@
 
-### Project
-!/webpack.*.js
-
 ### Build
 **/*.js
+!.build-config/**/*.js
 **/*.d.ts
 **/*.css
 **/*.map

@@ -4,11 +4,10 @@
   "description": "Boilerplate for react in typescript ",
   "keywords": [
     "boilerplate",
-    "hmtl",
+    "webpack",
     "typescript",
     "react",
-    "webpack",
-    "hmr"
+    "sass"
   ],
   "license": "MIT",
   "scripts": {
@@ -40,9 +39,9 @@
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.2.18",
-    "@storybook/addon-links": "^3.2.18",
-    "@storybook/react": "^3.2.18",
+    "@storybook/addon-actions": "^3.3.10",
+    "@storybook/addon-links": "^3.3.10",
+    "@storybook/react": "^3.3.10",
     "@types/node": "^8.5.1",
     "@types/react": "^16.0.31",
     "@types/react-dom": "^16.0.3",
