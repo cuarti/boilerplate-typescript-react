@@ -1,10 +1,9 @@
 
-### Node
-node_modules
-npm-debug.log*
-.npm
-.node_repl_history
-*.tgz
+### Project
+demo/
+test/
+doc/
+/webpack.*.js
 
 ### Build
 build/
@@ -12,19 +11,37 @@ dist/
 out/
 gen/
 
+### Node
+node_modules/
+npm-debug.log*
+.npm
+.node_repl_history
+jspm_packages/
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
+bower_components/
+*.tgz
+typings/
+.tscache
+.awcache/
+
 ### Common
-logs
+logs/
 *.log
-storage
-*.secret
+storage/
+*.secret/
 *.secret.*
-tmp
+tmp/
 *.tmp
 
 ### IDEs
-.project
-nbproject
-.idea
+.project/
+nbproject/
+nbbuild/
+nbdist/
+.nb-gradle/
+.idea/
 
 ### OS
 *.DS_Store

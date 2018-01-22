@@ -1,0 +1,22 @@
+
+@import '../../style/variables';
+
+
+.button {
+	background-color: $btn-bg-default;
+	padding: $btn-padding;
+	border: 1px solid $btn-border-default;
+	border-radius: $btn-radius;
+	cursor: pointer;
+	transition: all ease .5s;
+}
+
+.button:hover {
+	background-color: darken($btn-bg-default, 5%);
+	border-color: darken($btn-border-default, 5%);
+}
+
+.button:active {
+	background-color: darken($btn-bg-default, 10%);
+	border-color: darken($btn-border-default, 10%);
+}
