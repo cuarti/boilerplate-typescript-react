@@ -9,5 +9,5 @@ import {ImageButton} from '../../../src/components';
 storiesOf('ImageButton', module).add('default', () => (
 	<ImageButton text="Click-me!"
 				 img="/images/tux.png"
-				 onClick={action('clicked')}/>
+				 onClick={action('clicked')} />
 ));
