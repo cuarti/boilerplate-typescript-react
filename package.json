@@ -45,6 +45,7 @@
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
+    "testPathIgnorePatterns": ["__snapshots__"],
     "testRegex": "/test/spec.*|(\\.|/)\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
       "ts",

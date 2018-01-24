@@ -27,4 +27,6 @@ test('', () => {
 			}]
 		);
 
+	expect(component.toJSON()).toMatchSnapshot();
+
 });
