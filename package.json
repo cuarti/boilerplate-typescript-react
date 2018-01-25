@@ -39,9 +39,13 @@
         "useBabelrc": true
       }
     },
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
+    "testPathIgnorePatterns": ["__snapshots__"],
     "testRegex": "/test/spec.*|(\\.|/)\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
       "ts",
@@ -77,6 +81,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.7",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^22.1.4",
     "node-sass": "^4.7.2",
     "react-hot-loader": "^3.1.3",
