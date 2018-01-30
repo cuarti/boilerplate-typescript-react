@@ -155,7 +155,6 @@
     "align": [
       true,
       "parameters",
-      "arguments",
       "statements"
     ],
     "array-type": [true, "array"],
