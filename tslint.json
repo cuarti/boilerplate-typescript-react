@@ -164,7 +164,6 @@
     "callable-types": true,
     "class-name": true,
     "comment-format": [true, "check-space"],
-    "completed-docs": true,
     "encoding": true,
     "file-header": false,
     "import-spacing": true,
@@ -175,7 +174,6 @@
     "newline-before-return": true,
     "new-parens": true,
     "no-angle-bracket-type-assertion": true,
-    "no-boolean-literal-compare": true,
     "no-consecutive-blank-lines": [true, 2]
   }
 }
