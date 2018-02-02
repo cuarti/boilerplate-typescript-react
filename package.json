@@ -18,7 +18,9 @@
     "dev:ts": "tsc --watch",
     "dev:webpack": "TS_NODE_PROJECT=.build-config/tsconfig.json webpack-dev-server --config .build-config/webpack/config.ts --config-name dev",
     "dev:storybook": "TS_NODE_PROJECT=.build-config/tsconfig.json start-storybook -p 6006 -c .build-config/storybook -s public",
-    "test": "jest",
+    "test": "npm run test:lint && npm run test:jest",
+    "test:lint": "tslint **/*.ts -e '**/*.d.ts' -t verbose",
+    "test:jest": "jest",
     "script:createUser": "ts-node ./scripts/createUser.ts"
   },
   "author": {
@@ -32,29 +34,6 @@
   "homepage": "https://github.com/cuarti/boilerplate-typescript-react#readme",
   "bugs": {
     "url": "https://github.com/cuarti/boilerplate-typescript-react/issues"
-  },
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "useBabelrc": true
-      }
-    },
-    "moduleNameMapper": {
-      "\\.(css|scss)$": "identity-obj-proxy"
-    },
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testPathIgnorePatterns": ["__snapshots__"],
-    "testRegex": "/test/spec.*|(\\.|/)\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
   },
   "dependencies": {
     "react": "^16.2.0",
@@ -96,5 +75,28 @@
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7",
     "webpack-notifier": "^1.5.0"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    },
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testPathIgnorePatterns": ["__snapshots__"],
+    "testRegex": "/test/spec.*|(\\.|/)\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
