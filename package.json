@@ -19,7 +19,9 @@
     "dev:webpack": "TS_NODE_PROJECT=.build-config/tsconfig.json webpack-dev-server --config .build-config/webpack/config.ts --config-name dev",
     "dev:storybook": "TS_NODE_PROJECT=.build-config/tsconfig.json start-storybook -p 6006 -c .build-config/storybook -s public",
     "test": "npm run test:lint && npm run test:jest",
-    "test:lint": "tslint **/*.ts -e '**/*.d.ts' -t verbose",
+    "test:lint": "npm run test:tslint && npm run test:stylelint",
+    "test:tslint": "tslint **/*.ts -e '**/*.d.ts' -t verbose",
+    "test:stylelint": "stylelint **.*.scss --syntax scss",
     "test:jest": "jest",
     "script:createUser": "ts-node ./scripts/createUser.ts"
   },
