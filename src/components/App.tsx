@@ -3,8 +3,8 @@ import * as React from 'react';
 
 import {ImageButton} from './ImageButton';
 
-// import * as style from './App.scss';
-const style = require('./App.scss');
+import * as style from './App.scss';
+// const style = require('./App.scss');
 
 
 export class App extends React.Component<{}, {}> {

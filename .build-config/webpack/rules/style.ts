@@ -1,5 +1,5 @@
 
-import {styleLoader, devCssLoader, prodCssLoader, sassLoader, sassResourcesLoader} from '../loaders';
+import {styleLoader, devCssLoader, prodCssLoader, sassLoader, sassResourcesLoader, typedCssLoader} from '../loaders';
 
 
 // TODO: Add source-map-loader?
@@ -7,6 +7,7 @@ export const devStyleRule = {
 	test: /\.scss$/,
 	loaders: [
 		styleLoader,
+		typedCssLoader,
 		devCssLoader,
 		sassLoader,
 		sassResourcesLoader
@@ -18,6 +19,7 @@ export const prodStyleRule = {
 	test: /\.scss$/,
 	loaders: [
 		styleLoader,
+		typedCssLoader,
 		prodCssLoader,
 		sassLoader,
 		sassResourcesLoader

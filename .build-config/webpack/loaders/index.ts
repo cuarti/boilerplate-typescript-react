@@ -5,3 +5,4 @@ export * from './style';
 export * from './css';
 export * from './sass';
 export * from './sassResources';
+export * from './typedCss';
