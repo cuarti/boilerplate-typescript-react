@@ -17,6 +17,8 @@ export const dev = {
 
 	name: 'dev',
 
+	mode: 'development',
+
 	// TODO: Search best devtool for development with hmr
 	// devtool: 'cheap-module-eval-source-map',
 
