@@ -8,6 +8,8 @@ export const storybook = {
 
 	name: 'storybook',
 
+	// mode: 'development',
+
 	// devtool: 'cheap-module-eval-source-map'
 
 	resolve: basic.resolve,

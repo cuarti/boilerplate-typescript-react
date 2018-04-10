@@ -1,6 +1,6 @@
 
 import {basic} from './basic';
-import {prodEnvPlugin, uglifyPlugin} from '../plugins';
+import {notifierPlugin, prodEnvPlugin} from '../plugins';
 import {scriptRule, prodStyleRule} from '../rules';
 
 
@@ -17,6 +17,8 @@ export const prod = {
 	...basic,
 
 	name: 'prod',
+
+	mode: 'production',
 
 	// TODO: Search best devtool for production
 	// devtool: 'cheap-module-eval-source-map',
@@ -39,8 +41,12 @@ export const prod = {
 
 	plugins: [
 		...basic.plugins,
-		prodEnvPlugin,
-		uglifyPlugin
-	]
+		notifierPlugin,
+		prodEnvPlugin
+	],
+
+	optimization: {
+		minimize: true
+	}
 
 };
