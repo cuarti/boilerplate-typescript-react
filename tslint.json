@@ -82,7 +82,7 @@
         "variable-declaration": "nospace"
       }
     ],
-    "unified-signatures": true,
+    "unified-signatures": false,
     "await-promise": false,
     "ban": false,
     "curly": true,
@@ -103,7 +103,7 @@
     "no-for-in-array": false,
     "no-inferred-empty-object-type": false,
     "no-invalid-template-strings": true,
-    "no-invalid-this": true,
+    "no-invalid-this": false,
     "no-misused-new": true,
     "no-null-keyword": true,
     "no-object-literal-type-assertion": false,
@@ -112,9 +112,12 @@
     "no-string-literal": true,
     "no-string-throw": false,
     "no-switch-case-fall-through": false,
-    "no-this-assignment": [true, {
-      "allow-destructuring": true
-    }],
+    "no-this-assignment": [
+      true,
+      {
+        "allow-destructuring": true
+      }
+    ],
     "no-unbound-method": false,
     "no-unsafe-any": false,
     "no-unsafe-finally": true,
@@ -141,11 +144,24 @@
     "cyclomatic-complexity": true,
     "deprecation": false,
     "eofline": true,
-    "indent": [true],
-    "linebreak-style": [true, "LF"],
-    "max-classes-per-file": [true, 1],
-    "max-file-line-count": [false],
-    "max-line-length": [true, 120],
+    "indent": [
+      true
+    ],
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
+    "max-classes-per-file": [
+      true,
+      1
+    ],
+    "max-file-line-count": [
+      false
+    ],
+    "max-line-length": [
+      true,
+      120
+    ],
     "no-default-export": true,
     "no-mergeable-namespace": true,
     "no-require-imports": false,
@@ -154,26 +170,40 @@
     "trailing-comma": false,
     "align": [
       true,
-      "parameters",
-      "statements"
+      "members"
     ],
-    "array-type": [true, "array"],
-    "arrow-parens": [true, "ban-single-arg-parens"],
+    "array-type": [
+      true,
+      "array"
+    ],
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
     "arrow-return-shorthand": true,
     "binary-expression-operand-order": true,
     "callable-types": true,
     "class-name": true,
-    "comment-format": [true, "check-space"],
+    "comment-format": [
+      true,
+      "check-space"
+    ],
     "encoding": true,
     "file-header": false,
     "import-spacing": true,
-    "interface-name": [true, "never-prefix"],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
     "interface-over-type-literal": true,
     "jsdoc-format": true,
     "match-default-export-name": false,
-    "newline-before-return": true,
+    "newline-before-return": false,
     "new-parens": true,
     "no-angle-bracket-type-assertion": true,
-    "no-consecutive-blank-lines": [true, 2]
+    "no-consecutive-blank-lines": [
+      true,
+      2
+    ]
   }
 }
