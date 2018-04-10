@@ -20,8 +20,7 @@ export const basic = {
 	node: false,
 
 	plugins: [
-		typescriptCheckerPlugin,
-		notifierPlugin
+		typescriptCheckerPlugin
 	]
 
 };

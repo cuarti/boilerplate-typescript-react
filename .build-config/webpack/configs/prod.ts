@@ -1,6 +1,6 @@
 
 import {basic} from './basic';
-import {prodEnvPlugin} from '../plugins';
+import {notifierPlugin, prodEnvPlugin} from '../plugins';
 import {scriptRule, prodStyleRule} from '../rules';
 
 
@@ -41,6 +41,7 @@ export const prod = {
 
 	plugins: [
 		...basic.plugins,
+		notifierPlugin,
 		prodEnvPlugin
 	],
 
